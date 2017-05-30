@@ -1,12 +1,14 @@
-from django.shortcuts import render
+from django.contrib.auth import get_user_model
+from django.http import HttpResponse
+from django.shortcuts import render, redirect
 from .models import Post
 from django.utils import timezone
 
+User = get_user_model()
+
 
 def post_list(request):
-    posts = Post.objects.filter(
-        published_date__lte=timezone.now()
-    ).order_by('published_date')
+    posts = Post.objects.all().order_by('-created_date')
 
     context = {
         'posts': posts
@@ -28,7 +30,19 @@ def post_detail(request, pk):
 
 
 def post_create(request):
-    context = {
+    if request.method == 'GET':
+        context = {
 
-    }
-    return render(request, 'blog/post_create.html', context=context)
+        }
+        return render(request, 'blog/post_create.html', context=context)
+    elif request.method == 'POST':
+        data = request.POST
+        title = data['title']
+        text = data['text']
+        user = User.objects.first()
+        post = Post.objects.create(
+            title=title,
+            text=text,
+            author=user,
+        )
+        return redirect('post_detail', pk=post.pk)
