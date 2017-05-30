@@ -2,9 +2,7 @@ body { padding-left: 15px; }
 
 h1 a { font-family: 'Lobster'; color: white; }
 
-.page-header { background-color: #ff9400; margin-top: 0; padding: 20px 20px 20px 40px; text-align: center; }
-
-.page-header .row { text-decoration: none; }
+.page-header { background-color: #3322ff; margin-top: 0; padding: 20px 20px 20px 40px; text-align: center; }
 
 .page-header h1, .page-header h2 a { color: #ffffff; font-size: 36pt; }
 

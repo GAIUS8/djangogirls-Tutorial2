@@ -25,3 +25,10 @@ def post_detail(request, pk):
         'post': posts,
     }
     return render(request, 'blog/post_detail.html', context=context)
+
+
+def post_create(request):
+    context = {
+
+    }
+    return render(request, 'blog/post_create.html', context=context)
