@@ -2,9 +2,8 @@ body {
   padding-left: 15px; }
 
 h1 a {
-  color: white;
-  text-decoration: none;
-  font-family: 'Lobster'; }
+  font-family: 'Lobster';
+  color: white; }
 
 .page-header {
   background-color: #ff9400;
@@ -14,10 +13,8 @@ h1 a {
   .page-header h1, .page-header h2 a {
     color: #ffffff;
     font-size: 36pt;
-    text-decoration: none; }
-
-.col-xs-3 {
-  margin: 0 auto; }
+    text-decoration: none;
+    text-align: center; }
 
 .post {
   margin-bottom: 70px;
