@@ -10,5 +10,6 @@
         <p class="date">published: {{post.published_date}}</p>
         </div>
     </div>
+    <button><a class="btn btn-primary" href="{% url 'post_modify' pk=post.id %}">수정하기</a></button>
 </div>
 {% endblock %}
