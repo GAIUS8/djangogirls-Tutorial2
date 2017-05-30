@@ -1,5 +1,8 @@
 body {
-  padding-left: 15px; }
+  text-decoration: none; }
+
+a {
+  color: white; }
 
 h1 a {
   font-family: 'Lobster';
@@ -16,11 +19,7 @@ h1 a {
 
 .post {
   margin-bottom: 70px;
-  margin: 0 auto;
-  display: block; }
+  margin: 0 auto; }
   .post h2 a {
     color: black;
     font-family: 'Lobster'; }
-
-.date {
-  color: #828282; }

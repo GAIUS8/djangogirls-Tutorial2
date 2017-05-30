@@ -4,8 +4,7 @@
 <div class="container">
     <form action="" method="POST">
         {% csrf_token %}
-        <input name="title" type="text">
-        <textarea name="text" id="" cols="100" rows="10"></textarea>
+        {{ form }}
         <button type="submit">작성</button>
     </form>
 </div>

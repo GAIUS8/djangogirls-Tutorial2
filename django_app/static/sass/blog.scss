@@ -1,7 +1,9 @@
-body{
-  padding-left: 15px;
+body {
+  text-decoration: none;
 }
-
+a{
+  color: white;
+}
 h1 a{
   font-family: 'Lobster';
   color: white;
@@ -13,7 +15,6 @@ h1 a{
     padding: 20px 0px 20px 0px;
     text-align: center;
 
-
     h1, h2 a{
       color: #ffffff;
       font-size: 36pt;
@@ -23,14 +24,9 @@ h1 a{
 .post {
     margin-bottom: 70px;
     margin: 0 auto;
-    display: block;
 
     h2 a{
       color: black;
       font-family: 'Lobster';
     }
-}
-
-.date {
-    color: #828282;
 }
